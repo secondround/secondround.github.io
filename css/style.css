@@ -91,7 +91,7 @@ html {
 
 /* ice cream css */
 .ice-cream-intro {
-  background-image: url(../img/icecream-intro-picture.jpg);
+  background-image: url(../img/icecream-intro-picture.JPG);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,7 +116,7 @@ html {
 
 /* coffee css */
 .coffee-intro {
-  background-image: url(../img/coffee-intro-picture.jpg);
+  background-image: url(../img/coffee-intro-picture.JPG);
 
   height: 500px;
 
