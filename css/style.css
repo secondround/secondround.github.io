@@ -1,0 +1,325 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  outline: 1px dotted red;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+/* intro css */
+/*.intro {
+  background: url(../img/logo-white.jpg) no-repeat center center;
+  background-size: 75% 100%;
+  height: 50vh;
+}*/
+
+/* end intro */
+
+/* nav css */
+#nav {
+  z-index: 9999;
+}
+#nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar-custom {
+  margin-bottom: 0;
+  background-color: #121d1f;
+  border-radius: 0px;
+  /*padding: 10px 0;*/
+}
+.navbar-custom .navbar-brand {
+  font-weight: 600;
+}
+.navbar-custom .navbar-brand:focus {
+  outline: 0;
+}
+.navbar-custom .navbar-brand .navbar-toggle {
+  /*padding: 4px 6px;*/
+  /*font-size: 16px;*/
+  color: #fff;
+}
+
+.icon-bar {
+  color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+  outline: 0;
+}
+.navbar-custom a {
+  color: #f4f5f6;
+}
+.navbar-custom .nav li a {
+  /*letter-spacing: 1px;*/
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+  outline: 0;
+  color: #7bc3d1;
+  background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: 0;
+  background-color: transparent;
+  color: #7bc3d1;
+}
+.navbar-custom .nav li.active {
+  outline: 0;
+}
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-custom .nav li.active a:hover {
+  color: #fff;
+}
+/* end nav css */
+
+/* menu section */
+#menu img {
+  height: 500px;
+  margin: auto;
+}
+/* end menus css */
+
+/* ice cream css */
+.ice-cream-intro {
+  background-image: url(../img/icecream-intro-picture.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.ice-cream-right {
+  height: 350px;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ice-cream-left {
+  height: 350px;
+  padding: 0px;
+  overflow: hidden;
+}
+/* end ice cream css */
+
+/* coffee css */
+.coffee-intro {
+  background-image: url(../img/coffee-intro-picture.jpg);
+
+  height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coffee-right {
+  height: 350px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.coffee-left {
+  height: 350px;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end coffee css */
+
+/* kombucha css */
+.kombucha-intro {
+  background-image: url(../img/kombucha-intro-picture.jpg);
+
+  height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kombucha-right {
+  height: 350px;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kombucha-left {
+  height: 350px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+/* end kombucha css */
+
+/* desserts css */
+.desserts-intro {
+  background-image: url(../img/desserts-intro-picture.jpg);
+
+  height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.desserts-right {
+  height: 350px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.desserts-left {
+  height: 350px;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end desserts css */
+
+/* instagram feed */
+/* remove bootstrap gutter */
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.img-featured-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-featured-container img {
+  width: 100%;
+}
+
+.img-featured-container .img-backdrop {
+  background: linear-gradient(135deg, rgba(38, 163, 255, 0.85), rgba(83, 201, 179, 0.85));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.img-featured-container:hover > .img-backdrop {
+  opacity: 1;
+}
+
+/* center text horizontally and vertically on image hover */
+.img-featured-container .description-container {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 20px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.img-featured-container .description-container .fa-instagram {
+  font-size: 40px;
+}
+
+.img-featured-container .description-container p {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.img-featured-container:hover .description-container {
+  opacity: 1;
+}
+
+.img-featured-container .description-container .caption {
+  margin-bottom: 10px;
+}
+
+.img-featured-container .description-container .likes,
+.img-featured-container .description-container .comments {
+  margin: 0 5px;
+}
+
+.owl-prev {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  margin-left: -20px;
+  display: block!IMPORTANT;
+  border: 0px solid black;
+}
+
+button.owl-prev:focus,
+button.owl-next:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.owl-next {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  right: 0px;
+  display: block!IMPORTANT;
+  border: 0px solid black;
+}
+.owl-prev i,
+.owl-next i {
+  transform: scale(1, 6);
+  color: #ccc;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+/* instagram feed end */
+
+/* footer css */
+#footer {
+  background-color: black;
+}
+/* end footer css */
