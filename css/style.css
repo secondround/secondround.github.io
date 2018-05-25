@@ -8,26 +8,18 @@ html {
 /** {
   outline: 1px dotted red;
 }*/
+.container-fluid {
+  padding: 0px;
+}
 
 .vertical-align {
   display: flex;
   align-items: center;
 }
 
-.container-fluid {
-  padding: 0px;
-}
-
 .row {
   margin-left: 0;
   margin-right: 0;
-}
-
-.container {
-  .row {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
 }
 
 /* intro css */
@@ -104,24 +96,70 @@ html {
 /* end nav css */
 
 /* menu section */
-#menu img {
-  height: 500px;
-  margin: auto;
+
+.menu-container {
+  background-image: url(../img/intro-picture.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+#svg-logo {
+  height: 75vh;
+}
+
+.btn {
+  color: black;
+  background-color: black;
+  border-color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: block;
+  margin: 50px auto auto;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus,
+.btn:active,
+.btn.active {
+  color: #7bc3d1;
+  background-color: #121d1f;
+  border-color: #121d1f;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus,
+.btn:active,
+.btn.active a {
+  color: #7bc3d1;
+}
+
 /* end menus css */
 
 /* ice cream css */
 .ice-cream-intro {
-  background-image: url(../img/icecream-intro-picture.jpg);
+  background-image: url(../img/icecream-intro-picture.JPG);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 50vh;
 }
 
 .ice-cream-right {
-  height: 350px;
+  height: 50vh;
   margin: auto auto;
   display: flex;
   justify-content: center;
@@ -129,7 +167,7 @@ html {
 }
 
 .ice-cream-left {
-  height: 350px;
+  height: 50vh;
   padding: 0px;
   overflow: hidden;
 }
@@ -139,7 +177,7 @@ html {
 .coffee-intro {
   background-image: url(../img/coffee-intro-picture.JPG);
 
-  height: 500px;
+  height: 50vh;
 
   background-attachment: fixed;
   background-position: center;
@@ -148,13 +186,13 @@ html {
 }
 
 .coffee-right {
-  height: 350px;
+  height: 50vh;
   padding: 0px;
   overflow: hidden;
 }
 
 .coffee-left {
-  height: 350px;
+  height: 50vh;
   margin: auto auto;
   display: flex;
   justify-content: center;
@@ -166,7 +204,7 @@ html {
 .kombucha-intro {
   background-image: url(../img/kombucha-intro-picture.jpg);
 
-  height: 500px;
+  height: 50vh;
 
   background-attachment: fixed;
   background-position: center;
@@ -175,7 +213,7 @@ html {
 }
 
 .kombucha-right {
-  height: 350px;
+  height: 50vh;
   margin: auto auto;
   display: flex;
   justify-content: center;
@@ -183,7 +221,7 @@ html {
 }
 
 .kombucha-left {
-  height: 350px;
+  height: 50vh;
   padding: 0px;
   overflow: hidden;
 }
@@ -194,7 +232,7 @@ html {
 .desserts-intro {
   background-image: url(../img/desserts-intro-picture.jpg);
 
-  height: 500px;
+  height: 50vh;
 
   background-attachment: fixed;
   background-position: center;
@@ -203,13 +241,13 @@ html {
 }
 
 .desserts-right {
-  height: 350px;
+  height: 50vh;
   padding: 0px;
   overflow: hidden;
 }
 
 .desserts-left {
-  height: 350px;
+  height: 50vh;
   margin: auto auto;
   display: flex;
   justify-content: center;
@@ -302,7 +340,7 @@ html {
   position: absolute;
   top: 40%;
   margin-left: -20px;
-  display: block!IMPORTANT;
+  display: block !important;
   border: 0px solid black;
 }
 
@@ -318,7 +356,7 @@ button.owl-next:focus {
   position: absolute;
   top: 40%;
   right: 0px;
-  display: block!IMPORTANT;
+  display: block !important;
   border: 0px solid black;
 }
 .owl-prev i,
