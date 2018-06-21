@@ -5,9 +5,9 @@ html {
   font-family: 'garamond', garamond, Serif;
 }
 
-/** {
+/* * {
   outline: 1px dotted red;
-}*/
+} */
 .container-fluid {
   padding: 0px;
 }
@@ -21,9 +21,6 @@ html {
   margin-left: 0;
   margin-right: 0;
 }
-
-/* intro css */
-/* end intro */
 
 /* nav css */
 #nav {
@@ -97,20 +94,26 @@ html {
 
 /* menu section */
 
+#menu span {
+  font-size: 72pt;
+  color: white;
+  text-shadow:
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
 .menu-container {
   background-image: url(../img/intro-picture.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 800px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#svg-logo {
-  height: 75vh;
 }
 
 .btn {
@@ -155,11 +158,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 500px;
 }
 
 .ice-cream-right {
-  height: 50vh;
+  height: 500px;
   margin: auto auto;
   display: flex;
   justify-content: center;
@@ -167,17 +170,23 @@ html {
 }
 
 .ice-cream-left {
-  height: 50vh;
+  height: 500px;
   padding: 0px;
   overflow: hidden;
 }
+
+/* .ice-cream-left .img-responsive {
+  display: block;
+  width: auto;
+  max-height: 100%;
+} */
 /* end ice cream css */
 
 /* coffee css */
 .coffee-intro {
-  background-image: url(../img/coffee-intro-picture.JPG);
+  background-image: url(../img/coffee-intro-picture.jpg);
 
-  height: 50vh;
+  height: 500px;
 
   background-attachment: fixed;
   background-position: center;
@@ -186,13 +195,13 @@ html {
 }
 
 .coffee-right {
-  height: 50vh;
+  height: 500px;
   padding: 0px;
   overflow: hidden;
 }
 
 .coffee-left {
-  height: 50vh;
+  height: 500px;
   margin: auto auto;
   display: flex;
   justify-content: center;
@@ -204,7 +213,7 @@ html {
 .kombucha-intro {
   background-image: url(../img/kombucha-intro-picture.jpg);
 
-  height: 50vh;
+  height: 500px;
 
   background-attachment: fixed;
   background-position: center;
@@ -213,7 +222,7 @@ html {
 }
 
 .kombucha-right {
-  height: 50vh;
+  height: 500px;
   margin: auto auto;
   display: flex;
   justify-content: center;
@@ -221,18 +230,17 @@ html {
 }
 
 .kombucha-left {
-  height: 50vh;
+  height: 500px;
   padding: 0px;
   overflow: hidden;
 }
-
 /* end kombucha css */
 
 /* desserts css */
 .desserts-intro {
   background-image: url(../img/desserts-intro-picture.jpg);
 
-  height: 50vh;
+  height: 500px;
 
   background-attachment: fixed;
   background-position: center;
@@ -241,13 +249,13 @@ html {
 }
 
 .desserts-right {
-  height: 50vh;
+  height: 500px;
   padding: 0px;
   overflow: hidden;
 }
 
 .desserts-left {
-  height: 50vh;
+  height: 500px;
   margin: auto auto;
   display: flex;
   justify-content: center;
@@ -278,7 +286,7 @@ html {
 }
 
 .img-featured-container .img-backdrop {
-  background: linear-gradient(135deg, rgba(38, 163, 255, 0.85), rgba(83, 201, 179, 0.85));
+  background: radial-gradient(circle at center, rgba(66, 66, 66, 0.50), rgba(15, 15, 15, 0.50));
   margin: 0;
   padding: 0;
   width: 100%;
