@@ -6,8 +6,20 @@ html {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-  * { 
-    outline: 1px dotted red;
+  .ice-cream-intro {
+    visibility: hidden;
+  }
+
+  .coffee-intro {
+    visibility: hidden;
+  }
+
+  .kombucha-intro {
+    visibility: hidden;
+  }
+
+  .desserts-intro {
+    visibility: hidden;
   }
 }
 
@@ -177,11 +189,6 @@ html {
   overflow: hidden;
 }
 
-/* .ice-cream-left .img-responsive {
-  display: block;
-  width: auto;
-  max-height: 100%;
-} */
 /* end ice cream css */
 
 /* coffee css */
