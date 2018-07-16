@@ -2,7 +2,13 @@ body,
 html {
   margin: 0px;
   padding: 0px;
-  font-family: 'garamond', garamond, Serif;
+  font-family: "garamond", garamond, Serif;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  * { 
+    outline: 1px dotted red;
+  }
 }
 
 /* * {
@@ -97,11 +103,7 @@ html {
 #menu span {
   font-size: 72pt;
   color: white;
-  text-shadow:
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+  text-shadow: -1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .menu-container {
@@ -270,8 +272,8 @@ html {
   margin-right: 0;
 }
 
-.row.no-gutter [class*='col-']:not(:first-child),
-.row.no-gutter [class*='col-']:not(:last-child) {
+.row.no-gutter [class*="col-"]:not(:first-child),
+.row.no-gutter [class*="col-"]:not(:last-child) {
   padding-right: 0;
   padding-left: 0;
 }
@@ -286,7 +288,11 @@ html {
 }
 
 .img-featured-container .img-backdrop {
-  background: radial-gradient(circle at center, rgba(66, 66, 66, 0.50), rgba(15, 15, 15, 0.50));
+  background: radial-gradient(
+    circle at center,
+    rgba(66, 66, 66, 0.5),
+    rgba(15, 15, 15, 0.5)
+  );
   margin: 0;
   padding: 0;
   width: 100%;
@@ -377,10 +383,26 @@ button.owl-next:focus {
   display: flex;
   align-items: center;
 }
+
+/* .owl-item {
+  margin: 0px 0px !important;
+} */
 /* instagram feed end */
 
 /* footer css */
 #footer {
   background-color: black;
+  /* padding-top: 2%; */
+}
+
+#footer span {
+  font-size: 32pt;
+  margin: 10px 0px;
+  color: white;
+  display: block;
+}
+
+#footer p {
+  color: white;
 }
 /* end footer css */

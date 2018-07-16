@@ -67,7 +67,6 @@ function main() {
         // init owl    
         $(document).ready(function(){
           owl.owlCarousel({
-            // navContainer: '.owl-nav-custom',
             dotsContainer: '.owl-dots-custom',
             navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
             margin:10,
@@ -105,26 +104,10 @@ function main() {
     });
 
     galleryFeed.run();
+    console.log(galleryFeed);
   });
 
 }());
 
 }
 main();
-
-// instafetch.init({
-//   accessToken: '6001711699.1677ed0.d7babe0689bc46ddb3ea7b9ad8e29751',
-//   target: 'insta',
-//   numOfPics: 20,
-//   caption: true
-// })
-
-// secondround info:
-// accessToken: '7245013473.1677ed0.0c7721a8fff64b908e46fe95a6177085'
-// clientId: '3d8a964ecd3947818dc23b0e844b2e63'
-// userId: '7245013473'
-
-// personal info:
-    // userId: '6001711699',
-    // clientId: 'b3a1658519344c9ca8df2db0e4d3a289',
-    // accessToken: '6001711699.b3a1658.ab46fe48cbfa424a8956dd8d67965002',
